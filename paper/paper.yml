@@ -1,0 +1,22 @@
+title: 'DFTK: A Julian approach for simulating electrons in solids'
+keywords:
+  - Julia
+  - density-functional theory
+  - electronic structure theory
+  - numerical analysis
+  - solid state
+  - ab initio
+
+authors:
+  - name: Michael F. Herbst
+    orcid: 0000-0003-0378-7921
+    affiliation: 1
+  - name: Antoine Levitt
+    affiliation: 1
+  - name: Eric Cancès
+    affiliation: 1
+affiliations:
+ - name: CERMICS, Ecole des Ponts and Inria Paris, 6 \& 8 Avenue Blaise Pascal, 77455 Marne-la-Vallée, France
+   index: 1
+bibliography: ref.bib
+date: 28 September 2020
