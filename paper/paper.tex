@@ -12,12 +12,12 @@ Density-functional theory (DFT) is a widespread method for simulating the
 quantum-chemical behaviour of electrons in matter.
 It provides an accurate first-principles description of
 many optical, mechanical and chemical properties
-for a large range of systems at an acceptable computational cost.
+for a wide range of systems at an acceptable computational cost.
 The desire to tackle even bigger systems and
 more involved materials, however, keeps posing novel challenges
 that require methods to constantly improve.
 One example are so-called high-throughput screening approaches,
-which are becoming more and more prominent in recent years.
+which are becoming prominent in recent years.
 In these techniques one
 wishes to systematically scan over huge design spaces of compounds
 in order to identify promising novel materials
@@ -76,14 +76,16 @@ but also for simulations including systems beyond 800 electrons.
 After less than two years of development our code
 shows a sizeable feature set:
 We support 1D / 2D / 3D problems, a multitude of solution algorithms for DFT,
-employing custom analytic potentials, where results can be mathematically proven,
+hybrid thread / MPI-based parallelism.
+Problems can be based upon custom analytic potentials,
+e.g. where results can be mathematically proven,
 but also state-of-the-art DFT methods such as PBE~\cite{Perdew1996} in combination with
 Goedecker-type pseudopotentials~\cite{Goedecker1996}.
 Our code is well-integrated in the Julia ecosystem
 and features interfaces to established Python packages
 in the materials science community
 such as the atomistic simulation environment (ASE)~\cite{HjorthLarsen2017} or
-pymatgen~\cite{Ong2013} to setup systems for simulations or post-process obtained results.
+pymatgen~\cite{Ong2013} for setting up or post-processing simulations.
 The entrance barrier to get started with DFTK
 is kept low by designing the code in line with the mathematical and physical structure
 of the DFT problem.
