@@ -9,9 +9,11 @@
 
 Density-functional theory (DFT) is a widespread method for simulating the
 quantum-chemical behaviour of electrons in matter.
-It provides an accurate first-principles description of
+It provides a first-principles description of
 many optical, mechanical and chemical properties
-for a wide range of systems at an acceptable computational cost.
+at an acceptable computational cost~\cite{Martin2004,Burke2012,Burke2013}.
+For a wide range of systems the obtained predictions are accurate
+and shortcomings of the theory are by now well-understood~\cite{Burke2012,Burke2013}.
 The desire to tackle even bigger systems and
 more involved materials, however, keeps posing novel challenges
 that require methods to constantly improve.
@@ -36,17 +38,17 @@ is the reliability and performance
 of the underlying DFT codes.
 \vskip 6pt
 
-For tackling these aspects
-multidisciplinary collaboration is essential with
+To tackle these aspects
+multidisciplinary collaboration with
 mathematicians developing more numerically stable algorithms,
 computer scientists providing high-performance implementations,
 physicists and chemists designing appropriate models,
 and application scientists integrating the resulting methods
-inside a suitable simulation workflow.
+inside a suitable simulation workflow is essential.
 While to date already a sizeable number of DFT codes exist,
 e.g.~ABINIT~\cite{Romero2020}, Quantum-Espresso~\cite{Giannozzi2020}
 or VASP~\cite{VASP} to name only a few,
-they suffer from insufficient flexibility inside
+they lack sufficient flexibility inside
 their low-level computational routines
 to easily support fundamental research
 in computer science or mathematics.
@@ -56,10 +58,10 @@ such as automatic differentiation, multi-precision methods,
 GPU acceleration, error estimation and numerical analysis
 ---
 these communities have in the past resorted
-to developing their own tailored codes.
-These, however, are not performant enough
+to developing their own codes.
+These codes in turn are not performant enough
 to scale to the level required to test
-resulting novel DFT approaches in practical simulations.
+resulting DFT approaches in practical simulations.
 \vskip 6pt
 
 To overcome this barrier we have developed
